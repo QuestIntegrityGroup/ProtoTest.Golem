@@ -8,6 +8,10 @@ namespace ProtoTest.Golem.Purple.PurpleElements
         public PurplePanel(string name, string locatorPath) : base(name, locatorPath)
         {
         }
+		
+		public PurplePanel(string name, AutomationElement element) : base(name, element)
+		{
+		}
 
         public void DragAndDrop(Point startPoint, Point endPoint, bool RMB = false)
         {
