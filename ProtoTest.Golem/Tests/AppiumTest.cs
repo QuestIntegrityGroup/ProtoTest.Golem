@@ -8,7 +8,7 @@ using MbUnit.Framework;
 
 namespace GoogleTests
 {
-    class AppiumTest : AppiumTestBase
+    class AppiumTest 
     {
         [FixtureInitializer]
         public void setup()
@@ -16,14 +16,12 @@ namespace GoogleTests
             Config.Settings.runTimeSettings.LaunchBrowser = true;
             Config.Settings.appiumSettings.launchApp = false;
             Config.Settings.appiumSettings.device = "Android";
-            Config.Settings.appiumSettings.appPath = "Chrome.apk";
 
         }
         [Test]
         public void Test()
         {
-            driver.Navigate().GoToUrl("http://www.espn.com");
-            driver.FindElement(By.Id("q")).Click();
+           // driver.Navigate().GoToUrl("http://www.espn.com");
 
         }
 
